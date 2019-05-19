@@ -63,6 +63,8 @@ body{
 	width: 100%;
 	height: 100%;
 	position: absolute;
+	background-position: left;
+        background-size: 54%;
 }
 .banner-content{
     position: absolute;
