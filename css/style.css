@@ -1,0 +1,406 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+	width:1060px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+.logo{
+     width: 20%;
+     float: left;
+     vertical-align: -webkit-baseline-middle;
+     padding-top: 12px;
+}
+.menu{
+      width: 80%;
+      float: left;
+}
+.menu{
+	text-transform: uppercase;
+}
+.menu ul{
+	text-align: right;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+.menu ul li{
+    display: inline;
+    padding-right: 18px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #204f87;
+    font-weight: 700;
+}
+.menu ul li a:hover{}
+
+/**************header End*******************/
+
+.banner{
+	background-image: url(../images/background-2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 496px;
+	position: relative;
+}
+.banner .bg2{
+	background-image: url(../images/background-1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+   
+    transform: translateY(-50%);
+    
+}
+.banner-content h1{
+
+	
+	font-size: 82px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.arrow{
+	position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+/**************about us**************/
+.about-us{
+	overflow: hidden;
+	padding-top: 114px;
+
+}
+.description h2{
+	width: 70px;
+	height: 5px;
+    display: block;
+    background-color: #F15827;
+	
+}
+.description h1{
+	
+    font-size: 36px;
+    color: #204f87;
+	
+}
+.description p{
+	
+    font-size: 14px;
+    color: #b0b0b1;
+	
+}
+.description{
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 77px;
+}
+.about-us-img{
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding-left: 77px;
+}
+.our-work{
+	overflow:hidden;
+	background-color: #F7F8F8;
+	position: relative;
+	min-height: 700px;
+}
+.our-work-bg::before{
+	content: "";
+	position: absolute;
+	background-image: url(../images/about-us-bg.png);
+	width: 100%;
+	height: 100%;
+	bottom: 0px;
+	top: 0;
+	right: 0;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 52% 70%;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 59px;
+    font-size: 36px;
+    color: #204f87;
+}
+.heading h2{
+	width: 70px;
+	height: 5px;
+	/* display: block; */
+	background-color: #F15827;
+	/* text-align: center; */
+	margin: 0 auto;
+	/* padding-top: 40px; */
+	margin-top: 40px;
+
+}
+
+.heading h1{}
+.row{
+	width: 33.33%;
+	float: left;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	color: #;
+	padding-bottom: 50px;
+	position: relative;
+}
+.what-we-do{
+	
+}
+.row::before{
+	content: "";
+	position: absolute;
+	width: 96%;
+	height: 89%;
+	top: 0;
+	left: 0;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,204f87+100&0+0,0.76+100 */
+background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(32,79,135,0.76) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(32,79,135,0.76) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(32,79,135,0.76) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#c2204f87',GradientType=0 ); /* IE6-9 */
+
+}
+.row h4{
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%,-50%);
+    color: #fff;
+    font-size: 26px;
+}
+.row i{
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    color: #fff;
+    font-size: 19px;
+    transform: translate(-50%);
+}
+.our-attorney{
+	    
+	    min-height: 1200px;
+}
+.our-attorney-bg{
+	overflow: hidden;
+	background-image: url(../images/lawyer-bg.png);
+	width: 100%;
+	height: 100%;
+
+}
+.col-md-6{
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 50%;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-top: 220px;
+    padding-bottom: 200px;
+}
+}
+.heading2{}
+.heading2 h1{
+	    color: #fff;
+    font-size: 36px;
+}
+.heading2 p{
+	color: #929dcf;
+	font-size: 14px;
+}
+.heading2 span{
+	width: 70px;
+	height: 5px;
+    display: block;
+    background-color: #F15827;
+}
+.heading2 a{
+	color: #f2622c;
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: 600;
+}
+.col-md-3{
+	width: 50%;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    padding: 30px;
+}
+.lawyer{
+	
+	position: relative;
+}
+.lawyer img{
+	max-width: 100%;
+}
+.lawyer h1{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 24px;
+
+}
+.lawyer::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 99%;
+	top: 0;
+	left: 0;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,204f87+100&0+0,0.76+100 */
+background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(32,79,135,0.76) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(32,79,135,0.76) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(32,79,135,0.76) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#c2204f87',GradientType=0 ); /* IE6-9 */
+
+}
+.language-section{
+	
+}
+.col-md-12{
+	width: 100%;
+	overflow: hidden;
+}
+.col-md-4{
+
+	width: 25%;
+	float: left;
+	box-sizing: border-box;
+}
+.col-md-4 h1{
+	font-size: 24px;
+	color: #28377e;
+	text-transform: uppercase;
+}
+.col-md-4 p{
+	color: #b1b0b1;
+	font-size: 14px;
+	padding-right: 10px;
+}
+.col-md-4 a
+{
+	color: #f2622c;
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: 600;
+}
+.contact-form-section{
+	background-color: #28377E;
+	    margin-top: 200px;
+}
+.contact-form-section h1{
+	color: #fff;
+}
+form{
+	
+    height: 350px;
+    display: inline-block;
+    color: #fff;
+}
+input[type="text"]{
+       width: 550px;
+    padding: 8px;
+    background: #28377e;
+    
+    margin-top: 10px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #a1aee8;
+}
+::placeholder{
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+textarea{
+    width: 550px;
+        
+    padding: 8px;
+    background: #28377e;
+    
+    margin-top: 10px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #a1aee8;
+}
+
+.send{
+         width: 180px;
+    /* float: right; */
+    height: 40px;
+    /* margin-right: 20px; */
+    margin: 0 auto;
+    line-height: 30px;
+    background-color: #F26A2F;
+    margin-top: 10px;
+}
+
+.send a{
+	text-decoration: none;
+    color: white;
+    font-size: 26px;
+   font-weight: 600;
+    text-transform: uppercase;
+}
+
+    
+.send a:hover{
+	background-color: #15A4FA;
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+
+}
+.footer{
+
+ background-color: #0c1234;
+
+}
+.footer .col-md-6{
+	width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.copyright{
+	color:#b1b8dd; 
+}
+.social{
+    list-style-type: none;
+    text-align: center;
+}
+.social li{
+    display: initial;
+}
+.social li a{
+    font-size: 26px;
+    color: #b1b8dd;
+    padding: 0px 10px;
+}
