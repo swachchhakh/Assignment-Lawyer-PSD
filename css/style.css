@@ -1,5 +1,11 @@
+
 body{
     font-family: 'Montserrat', sans-serif;
+    margin:0 auto;
+}
+
+.banner,.header-section,.about-us,.our-work,.our-attorney,.language-section,.contact-form-section,.footer{
+	width: 1920px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -19,6 +25,7 @@ body{
 .menu{
       width: 80%;
       float: left;
+      box-sizing: border-box;
 }
 .menu{
 	text-transform: uppercase;
@@ -34,7 +41,7 @@ body{
 }
 .menu ul li a{
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     color: #204f87;
     font-weight: 700;
 }
