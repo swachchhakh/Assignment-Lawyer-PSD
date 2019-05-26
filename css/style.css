@@ -4,6 +4,7 @@ body{
     margin:0 auto;
 }
 
+
 .banner,.header-section,.about-us,.our-work,.our-attorney,.language-section,.contact-form-section,.footer{
 	
 	margin-left: auto;
@@ -48,7 +49,18 @@ body{
     color: #204f87;
     font-weight: 700;
 }
-.menu ul li a:hover{}
+.menu ul li a:hover{
+    text-decoration: none;
+    border-bottom: 3px solid #F1602A;
+    font-weight: 900;
+    
+
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+     padding: 2px 0;
+}
+
 
 /**************header End*******************/
 
@@ -97,6 +109,7 @@ body{
 .about-us{
 	overflow: hidden;
 	padding-top: 114px;
+	padding-bottom: 114px;
 
 }
 .description h2{
@@ -212,30 +225,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 }
 .our-attorney{
 	    
-	    min-height: 1200px;
+	 overflow: hidden;
+	background-image: url(../images/lawyer-bg.png);
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	  
 }
-.our-attorney-bg{
-	overflow: hidden;
-    background-image: url(../images/lawyer-bg.png);
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-size: 100%;
 
-}
-.col-md-6{
-	width: 50%;
+.col-md-2{
+	width: 20%;
 	float: left;
 	box-sizing: border-box;
 	overflow: hidden;
-	width: 50%;
-    float: left;
-    box-sizing: border-box;
-    overflow: hidden;
-    padding-top: 220px;
-    padding-bottom: 200px;
+	float: left;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-top: 220px;
+	padding-bottom: 200px;
+}
+.col-md-8{
+	width: 80%;
+	float: left;
+	box-sizing: border-box;
+	overflow: hidden;
+	float: left;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-top: 220px;
+	padding-bottom: 200px;
+	padding-left: 25px;
 }
 }
 .heading2{}
@@ -259,42 +279,63 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	text-decoration: none;
 	font-weight: 600;
 }
-.col-md-3{
+.col-md-8 .col-md-4{
 	width: 50%;
-    float: left;
-    box-sizing: border-box;
-    position: relative;
-    padding: 30px;
+	float: left;
+	height: 505px;
+	/* min-height: 442px; */
+	box-sizing: border-box;
+	/* position: relative; */
+	padding: 27px;
+	/* box-sizing: border-box; */
+	margin: 5;
 }
 .lawyer{
 	
-	position: relative;
+position: relative;
+	
+width: 100%;
+	
+height: 105%;
 }
 .lawyer img{
-	max-width: 100%;
+	width: 100%;
+	/* height: 100%; */
 }
 .lawyer h1{
+	position: absolute;
+	
+  
+    opacity: 0;
+
+}
+.lawyer:hover h1{
 	position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    
     color: #fff;
     font-size: 24px;
+    opacity: 1;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+
 
 }
 .lawyer::before{
 	content: "";
 	position: absolute;
 	width: 100%;
-	height: 99%;
+	height: 100%;
 	top: 0;
 	left: 0;
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,204f87+100&0+0,0.76+100 */
-background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(32,79,135,0.76) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(32,79,135,0.76) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(32,79,135,0.76) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#c2204f87',GradientType=0 ); /* IE6-9 */
-
+	background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(32,79,135,0.76) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(32,79,135,0.76) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(32,79,135,0.76) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#c2204f87',GradientType=0 ); /* IE6-9 */
 }
 .language-section{
 	
@@ -311,9 +352,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 }
 .col-md-4 h1{
 	font-size: 24px;
-	color: #28377e;
-	text-transform: uppercase;
+    color: #28367e;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    border-top: #fff 3px solid;
+    position: relative;
+
 }
+.language-section .col-md-4 h1::after{
+	content: " ";
+	width: 100%;
+    position: absolute;
+    top: -14px;
+    left: 0%;
+    height: 3px;
+    
+    background: #f2622c;
+    transform: scale(0);
+    transform-origin: center;
+    transition: 0.4s ease all;
+    -webkit-transition: .4s ease all;
+
+}
+
 .col-md-4 p{
 	color: #b1b0b1;
 	font-size: 14px;
