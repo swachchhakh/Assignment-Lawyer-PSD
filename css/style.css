@@ -10,6 +10,7 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 }
+/******************header-section************************/
 .header-section{
 	padding: 20px 0;
 }
@@ -48,21 +49,31 @@ body{
     font-size: 14px;
     color: #204f87;
     font-weight: 700;
-}
-.menu ul li a:hover{
-    text-decoration: none;
-    border-bottom: 3px solid #F1602A;
-    font-weight: 900;
-    
+    position: relative;
 
-    transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-     padding: 2px 0;
 }
+.menu ul li a::after{
+    content: " ";
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	top: -14px;
+	left: 0%;
+	background: #f2622c;
+	transform: scale(0);
+	transform-origin: center;
+	transition: 0.4s ease all;
+	-webkit-transition: .4s ease all;
+}
+.menu ul li:hover a::after{
+    transform: scale(1);
+}
+
 
 
 /**************header End*******************/
+
+/******************Banner-section************************/
 
 .banner{
 	background-image: url(../images/background-2.png);
@@ -98,6 +109,7 @@ body{
     color: #fff;
     text-transform: uppercase;
 }
+
 .arrow{
 	position: absolute;
     bottom: 80px;
@@ -105,7 +117,9 @@ body{
     transform: translateX(-50%);
     color: #fff;
 }
-/**************about us**************/
+/******************Banner-section end************************/
+
+/**************about us-section**************/
 .about-us{
 	overflow: hidden;
 	padding-top: 114px;
@@ -143,6 +157,9 @@ body{
 	box-sizing: border-box;
 	padding-left: 77px;
 }
+/**************about us-section-end**************/
+
+/**************our-work-section**************/
 .our-work{
 	overflow:hidden;
 	background-color: #F7F8F8;
@@ -223,6 +240,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
     font-size: 19px;
     transform: translate(-50%);
 }
+/**************our-work-section-end**************/
+/**************our-attorney-start**************/
 .our-attorney{
 	    
 	 overflow: hidden;
@@ -290,7 +309,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	/* box-sizing: border-box; */
 	margin: 5;
 }
-.lawyer{
+.col-md-4 .lawyer{
 	
 position: relative;
 	
@@ -298,18 +317,18 @@ width: 100%;
 	
 height: 105%;
 }
-.lawyer img{
+.col-md-4 .lawyer img{
 	width: 100%;
 	/* height: 100%; */
 }
-.lawyer h1{
+.col-md-4 .lawyer  h1{
 	position: absolute;
 	
   
     opacity: 0;
 
 }
-.lawyer:hover h1{
+.col-md-4 .lawyer:hover h1{
 	position: absolute;
     top: 50%;
     left: 50%;
@@ -324,7 +343,7 @@ height: 105%;
 
 
 }
-.lawyer::before{
+.col-md-4 .lawyer::before{
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -337,6 +356,10 @@ height: 105%;
 	background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(32,79,135,0.76) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#c2204f87',GradientType=0 ); /* IE6-9 */
 }
+
+/**************our-attorney-end**************/
+
+/**************language-section**************/
 .language-section{
 	
 }
@@ -352,28 +375,28 @@ height: 105%;
 }
 .col-md-4 h1{
 	font-size: 24px;
-    color: #28367e;
-    text-transform: uppercase;
-    font-weight: 600;
-    display: inline-block;
-    border-top: #fff 3px solid;
-    position: relative;
-
+	color: #28367e;
+	text-transform: uppercase;
+	font-weight: 600;
+	display: inline-block;
+	/* border-bottom: #fff 3px solid; */
+	position: relative;
 }
 .language-section .col-md-4 h1::after{
 	content: " ";
 	width: 100%;
-    position: absolute;
-    top: -14px;
-    left: 0%;
-    height: 3px;
-    
-    background: #f2622c;
-    transform: scale(0);
-    transform-origin: center;
-    transition: 0.4s ease all;
-    -webkit-transition: .4s ease all;
-
+	height: 3px;
+	position: absolute;
+	bottom: -14px;
+	left: 0%;
+	background: #f2622c;
+	transform: scale(0);
+	transform-origin: center;
+	transition: 0.4s ease all;
+	-webkit-transition: .4s ease all;
+}
+.language-section .col-md-4:hover h1::after{
+	transform: scale(1);
 }
 
 .col-md-4 p{
@@ -387,7 +410,10 @@ height: 105%;
 	font-size: 18px;
 	text-decoration: none;
 	font-weight: 600;
-}
+}/**************language-section end**************/
+
+
+/**************contact-form-section**************/
 .contact-form-section{
 	background-color: #28377E;
 	    margin-top: 200px;
@@ -395,6 +421,10 @@ height: 105%;
 .contact-form-section h1{
 	color: #fff;
 }
+
+
+
+
 form{
 	
     height: 350px;
@@ -456,6 +486,11 @@ textarea{
 	-moz-transition: all 0.4s ease;
 
 }
+/**************contact-form-section**************/
+
+/**************footer**************/
+
+
 .footer{
 
  background-color: #0c1234;
